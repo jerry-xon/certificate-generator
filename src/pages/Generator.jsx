@@ -66,7 +66,7 @@ const Generator = () => {
               placeholder="Certificate Description"
               value={desc}
               onChange={handleDescChange}
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-600 text-sm"
+              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-600 text-[14px]"
             />
             <input
               type="date"
@@ -99,9 +99,7 @@ const Generator = () => {
 
             {/* Description (auto-wrap, limited by box height) */}
             <div
-              className="absolute top-[48%] w-full text-center 
-              text-[12px] sm:text-[14px] md:text-[16px] lg:text-[17px] 
-              text-black px-4 leading-relaxed break-words overflow-hidden"
+              className="absolute top-[48%] w-full text-center text-[10px] sm:text-[12px] md:text-[14px] text-black px-4 leading-relaxed break-words overflow-hidden"
               style={{ maxHeight: "86px" }}
             >
               {desc}
@@ -138,7 +136,7 @@ const Generator = () => {
           {/* Description (auto-wrap, limited by box height) */}
           <div
             className="absolute top-[48%] w-[99%]
-              text-center text-[17px] text-black px-4 leading-relaxed break-words overflow-hidden"
+              text-center text-[12px] text-black px-4 leading-relaxed break-words overflow-hidden"
             style={{ maxHeight: "86px" }}
           >
             {desc}
